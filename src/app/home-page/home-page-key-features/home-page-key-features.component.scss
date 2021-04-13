@@ -1,0 +1,45 @@
+.title {
+    color: #333;
+    text-align: center;
+    padding: 7px;
+    font-size: 40px;
+    margin-bottom: 0;
+
+    &--bg {
+        // background-image: url('assets/images/key_feature_bg.png');
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &-tag {
+        color: #908c8c;
+        text-align: center;
+    }
+}
+
+.key-features-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 160px;
+    cursor: pointer;
+
+    & .selected {
+        box-shadow: 3px 3px 1rem #c7c7c7;
+    }
+}
+
+.feature-box {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+
+    & .feature-box-content {
+        font-size: 14px;
+    }
+
+    & .btn {
+        text-align: center;
+        margin-top: 20px;
+    }
+}

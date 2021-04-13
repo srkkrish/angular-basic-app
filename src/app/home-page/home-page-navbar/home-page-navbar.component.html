@@ -1,0 +1,32 @@
+<section class="home">
+    <header class="home-header">
+        <img src="../../../../assets/images/Logo_white.png" class="logo" />
+
+        <div class="home-navar">
+            <nav class="main-nav">
+                <ul class="nav-lists">
+                    <li class="nav-item" *ngFor="let link of links">
+                        <a class="nav-link" href="#" routerLink="link">{{ link }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="home-contents">
+        <div class="home-contents-data">
+            <h1>Designed By Indian Engineers</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, neque doloribus? Cumque dolorem veniam
+                minus,
+                magnam quae quibusdam rem reprehenderit dolorum placeat eius molestiae fugiat odio officiis quas
+                perferendis nemo!
+            </p>
+            <button class="btn">View Products</button>
+        </div>
+
+        <div class="image">
+            <img src="../../../assets/images/banner_illustration.png" />
+        </div>
+    </div>
+
+</section>

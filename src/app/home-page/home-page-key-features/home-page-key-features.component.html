@@ -1,0 +1,28 @@
+<h2 class="title title--bg">Key Features</h2>
+<section class="key-features-content">
+    <div class="feature-box" *ngFor="let feature of features; let i = index" (click)="selectedFeature = i"
+        [ngClass]="{'selected': selectedFeature === i}">
+        <div class="feature-header">
+            <img [src]="feature.img" />
+            <h2>{{ feature.name }}</h2>
+        </div>
+
+        <p class="feature-box-content">
+            <ng-container *ngIf="feature.btn; else msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eligendi ex itaque non illo
+                reprehenderit optio molestiae et quo. Aperiam, iste? Excepturi velit cumque nam dolores aliquam
+                praesentium, quisquam laudantium!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro ducimus necessitatibus
+                eveniet, reprehenderit modi perferendis harum corrupti totam laborum in obcaecati quis magni
+                voluptates ipsam blanditiis natus! Quibusdam, repellat?
+            </ng-container>
+
+            <ng-template #msg>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam voluptatibus aspernatur accusamus
+                iusto
+                accusantium, vitae dolorem. Aspernatur,
+            </ng-template>
+        </p>
+
+    </div>
+</section>
